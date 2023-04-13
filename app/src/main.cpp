@@ -9,7 +9,6 @@
 int main(int argc, char *argv[])
 {
     Core::init();
-
     QFile file(":/qml/main.qml");
     qDebug() << file.exists();
 

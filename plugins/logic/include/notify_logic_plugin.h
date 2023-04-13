@@ -1,6 +1,8 @@
 #ifndef NOTIFY_LOGIC_PLUGIN_H
 #define NOTIFY_LOGIC_PLUGIN_H
+
 #include "logic_interface.h"
+
 #include <QString>
 #include <QTimer>
 namespace LogicPlugin {
