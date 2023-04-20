@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QObject>
 
+
 namespace LogicPlugin {
     /*!
      * \brief Класс реализующий плагин бизнес-логики отображения уведомлений
