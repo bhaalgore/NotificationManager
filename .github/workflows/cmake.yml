@@ -17,6 +17,7 @@ jobs:
           version: '5.15.2'
           host: 'windows'
           arch: 'win64_mingw81'
+          dir: "${{github.workspace}}/qt"
       - name: Install dependencies
         run: |
           choco install mingw -y --version 10.3.0       
@@ -38,6 +39,7 @@ jobs:
           host: 'linux'
           target: 'desktop'
           arch: 'gcc_64'
+          dir: "${{github.workspace}}/qt"
       - name: Install dependencies       
         run: |
           sudo apt-get update
@@ -61,6 +63,7 @@ jobs:
           host: 'linux'
           target: 'desktop'
           arch: 'gcc_64'
+          dir: "${{github.workspace}}/qt"
       - name: Install dependencies
         run: |
           sudo apt-get update
