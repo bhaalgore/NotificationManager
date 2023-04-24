@@ -19,7 +19,7 @@ jobs:
           arch: 'win64_mingw81'
           dir: "${{github.workspace}}/qt"
       - name: Check qt path
-      - run: |
+        run: |
           echo ${{ github.workspace }}/qt
       - name: Install dependencies
         run: |
@@ -46,7 +46,7 @@ jobs:
           arch: 'gcc_64'
           dir: "${{github.workspace}}/qt"
       - name: Check qt path
-      - run: |
+        run: |
           echo ${{ github.workspace }}/qt
       - name: Install dependencies       
         run: |
@@ -75,7 +75,7 @@ jobs:
           arch: 'gcc_64'
           dir: "${{github.workspace}}/qt"
       - name: Check qt path
-      - run: |
+        run: |
           echo ${{ github.workspace }}/qt
       - name: Install dependencies
         run: |
