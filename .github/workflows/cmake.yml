@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=qt\Qt\5.15.2\mingw81_64" -DCMAKE_INSTALL_PREFIX=qt\Qt\5.15.2\mingw81_64" 
+          cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=qt\Qt\5.15.2\mingw81_64" 
           
   build-linux-jammy:
     runs-on: ubuntu-22.04
