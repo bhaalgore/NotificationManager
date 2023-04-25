@@ -26,11 +26,11 @@ jobs:
           choco install mingw -y --version 10.3.0       
       - name: Build
         env:
-          QT5_DIR: "qt/Qt/5.15.2/mingw81_64"
+          QT5_DIR: "qt\\Qt\\5.15.2\\mingw81_64"
         run: |
           mkdir build
           cd build
-          cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH="qt\Qt\5.15.2\mingw81_64"
+          cmake .. -G "MinGW Makefiles" -DCMAKE_PREFIX_PATH=${QT5_DIR}
           
   build-linux-jammy:
     runs-on: ubuntu-22.04
