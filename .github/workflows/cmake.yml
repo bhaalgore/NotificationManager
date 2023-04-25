@@ -59,7 +59,7 @@ jobs:
         run: |
           mkdir build
           cd build
-          cmake .. -DCMAKE_PREFIX_PATH=%QT5_DIR% -DCMAKE_INSTALL_PREFIX=%QT5_DIR%
+          cmake .. -DCMAKE_PREFIX_PATH=${QT5_DIR} -DCMAKE_INSTALL_PREFIX=${QT5_DIR}
           
   build-linux-focal:
     runs-on: ubuntu-20.04
