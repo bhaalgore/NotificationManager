@@ -26,7 +26,7 @@ jobs:
           choco install mingw -y --version 10.3.0       
       - name: Build
         env:
-          QT5_DIR: "qt/Qt/5.15.2/mingw81_64"
+          QT5_DIR: "qt\Qt\5.15.2\mingw81_64"
         run: |
           mkdir build
           cd build
