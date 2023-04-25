@@ -89,4 +89,4 @@ jobs:
           echo $QT5_DIR
           mkdir build
           cd build
-          cmake .. -DCMAKE_PREFIX_PATH=${{ QT5_DIR }}  -DCMAKE_INSTALL_PREFIX=${{ QT5_DIR }} 
+          cmake .. -DCMAKE_PREFIX_PATH=qt/Qt/5.15.2/gcc_64 -DCMAKE_INSTALL_PREFIX=qt/Qt/5.15.2/gcc_64
